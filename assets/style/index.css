@@ -113,6 +113,11 @@ section:nth-child(even) {
     gap: 5%;
   }
 }
+@media screen and (max-width: 400px) {
+  .header .header-container {
+    gap: 0;
+  }
+}
 .header .header-container .header-img {
   background: url(../../assets/images/header.jpg) center/cover;
   display: -webkit-box;
@@ -139,4 +144,9 @@ section:nth-child(even) {
 .header .header-container .header-text h1 {
   font-size: 4rem;
   margin-bottom: 20px;
+}
+@media screen and (max-width: 500px) {
+  .header .header-container .header-text h1 {
+    font-size: 2rem;
+  }
 }/*# sourceMappingURL=index.css.map */

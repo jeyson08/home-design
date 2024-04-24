@@ -1,3 +1,78 @@
+@font-face {
+  font-family: "open-medium-italic";
+  src: url(../fonts/OpenSans-MediumItalic.ttf);
+}
+@font-face {
+  font-family: "open-light";
+  src: url(../fonts/OpenSans-Light.ttf);
+}
+@font-face {
+  font-family: "open-semi-bold";
+  src: url(../fonts/OpenSans-SemiBold.ttf);
+}
+@font-face {
+  font-family: "open-bold";
+  src: url(../fonts/OpenSans-Bold.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1 {
+  font-family: open-bold, sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+h1:first-of-type {
+  font-family: open-medium-italic, serif;
+}
+
+h2 {
+  font-family: open-semi-bold, sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: open-light, sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
 body {
-  background-color: black;
+  margin: 0 auto;
+}
+
+button {
+  background: none;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
+  height: 45px;
+  width: 170px;
+  font-size: 0.75rem;
+  cursor: pointer;
+  font-family: open-light, sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: black;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+button:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+section {
+  height: 80vh;
+}
+section:nth-child(even) {
+  background: #eceada;
 }/*# sourceMappingURL=index.css.map */

@@ -1,4 +1,6 @@
 .header {
+  max-width: 1300px;
+  margin: 0 auto;
   h1:first-of-type:not(.header-container h1) {
     font-size: 1rem;
     color: $color1;
@@ -17,7 +19,14 @@
   .header-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 10%;
     height: 90%;
+
+    @media screen and (max-width: 700px) {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 5%;
+    }
 
     .header-img {
       background: url(../../assets/images/header.jpg) center/cover;
@@ -31,8 +40,6 @@
       display: flex;
       justify-content: center;
       flex-direction: column;
-      padding-left: 10%;
-      padding-right: 70%;
 
       h1 {
         font-size: 4rem;

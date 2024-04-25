@@ -144,9 +144,102 @@ section:nth-child(even) {
 .header .header-container .header-text h1 {
   font-size: 4rem;
   margin-bottom: 20px;
+  color: #735e59;
 }
 @media screen and (max-width: 500px) {
   .header .header-container .header-text h1 {
     font-size: 2rem;
+  }
+}
+
+.description {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10%;
+}
+.description .description-container-left {
+  width: 50%;
+}
+.description .description-container-left h1 {
+  font-size: 4rem;
+  color: #735e59;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 900px) {
+  .description .description-container-left h1 {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .description .description-container-left h1 {
+    font-size: 2rem;
+  }
+}
+.description .description-container-left p {
+  color: #735e59;
+}
+@media screen and (max-width: 900px) {
+  .description .description-container-left p {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  .description .description-container-left {
+    width: 100%;
+  }
+}
+.description .description-container-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  width: 50%;
+  gap: 20px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.description .description-container-right .img-top {
+  background: url(../../assets/images/description1.jpg) center/cover;
+  height: 200px;
+}
+@media screen and (max-width: 700px) {
+  .description .description-container-right .img-top {
+    height: 100%;
+    width: 50%;
+  }
+}
+.description .description-container-right .img-bottom {
+  background: url(../../assets/images/description2.jpg) center/cover;
+  height: 300px;
+}
+@media screen and (max-width: 700px) {
+  .description .description-container-right .img-bottom {
+    height: 100%;
+    width: 50%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .description .description-container-right {
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+@media screen and (max-width: 700px) {
+  .description {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }/*# sourceMappingURL=index.css.map */

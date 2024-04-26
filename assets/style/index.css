@@ -74,14 +74,15 @@ section {
   height: 80vh;
   padding: 50px 5% 50px 5%;
 }
+@media screen and (min-width: 1300px) {
+  section {
+    padding: 50px 20% 50px 20%;
+  }
+}
 section:nth-child(even) {
   background: #eceada;
 }
 
-.header {
-  max-width: 1300px;
-  margin: 0 auto;
-}
 .header h1:first-of-type:not(.header-container h1) {
   font-size: 1rem;
   color: #735e59;
@@ -153,8 +154,6 @@ section:nth-child(even) {
 }
 
 .description {
-  max-width: 1300px;
-  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
